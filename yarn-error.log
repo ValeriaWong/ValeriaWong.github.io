@@ -1,0 +1,61 @@
+Arguments: 
+  /usr/local/Cellar/node/19.4.0_1/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Users/macos/opt/anaconda3/bin:/Users/macos/opt/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Library/TeX/texbin:/usr/local/go/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EBUSY: resource busy or locked, unlink '/Volumes/valeria/obsidian/计算机/ValeriaWong.github.io/node_modules/@esbuild/.darwin-x64-aVR8xNDq/bin/.smbdeleteAAA132d74.4'
+
+npm manifest: 
+  {
+    "name": "valeria_blog",
+    "private": true,
+    "packageManager": "pnpm@8.5.0",
+    "description": "一只野生法本计硕的技术成长博客,包括学习笔记,吐槽树洞,代码片段和项目集合展示",
+    "author": {
+      "name": "valeria",
+      "email": "jobtowq@163.com",
+      "url": "https://github.com/ValeriaWong/ValeriaWong.github.io"
+    },
+    "homepage": "https://valeriawong.github.io/",
+    "bugs": {
+      "url": "https://valeriawong.github.io//issues"
+    },
+    "license": "GPL3.0",
+    "type": "module",
+    "scripts": {
+      "docs:dev": "vitepress dev docs",
+      "docs:build": "vitepress build docs",
+      "docs:preview": "vitepress preview docs --port 8080",
+      "format": "prettier --check --write .",
+      "prepare": "husky install"
+    },
+    "devDependencies": {
+      "@types/wanakana": "^4.0.3",
+      "feed": "^4.2.2",
+      "husky": "^8.0.0",
+      "prettier": "2.8.8",
+      "pretty-quick": "^3.1.3",
+      "vitepress": "^v1.0.0-beta.5",
+      "vue": "^3.3.4",
+      "wanakana": "^5.1.0",
+      "typescript": "5.1.6"
+    }
+    
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

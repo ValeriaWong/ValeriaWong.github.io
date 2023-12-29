@@ -1,37 +1,58 @@
-## Welcome to GitHub Pages
+# Publish your Obsidian Notes
 
-You can use the [editor on GitHub](https://github.com/ValeriaWong/ValeriaWong.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+(MkDocs template)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Would you like to take _some_ of your notes in [Obsidian](https://obsidian.md/) and make it public?
 
-### Markdown
+This template gives you an easy (and automated) way to publish your Obsidian notes (or blog!) on your Github pages.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+With this template, you get these **out-of-the-box**:
 
-```markdown
-Syntax highlighted code block
+- an awesome website based on Material theme, complete with a search bar (Checkout this template repo published [here](https://jobindjohn.github.io/obsidian-publish-mkdocs/))
+![](2021-11-22-22-49-26.png)
+- get the Obsidian/Roam style `[[wikilinks]]` from your vault in your published notes
+- Toggle between light and dark mode
+- Blog folder
 
-# Header 1
-## Header 2
-### Header 3
+## Quick start
 
-- Bulleted
-- List
+1. Create a **new github repository using this template**. Click the green button at the top or use [this link](https://github.com/jobindjohn/obsidian-publish-mkdocs/generate). 
 
-1. Numbered
-2. List
+![](2021-11-22-22-54-02.png)
 
-**Bold** and _Italic_ and `Code` text
+2.  **Give a name** to your repository. By default your notes will be published at `<https://username.github.io/repo-name/>`
+     - Copy only the `main` branch while creating the repo from the template
+3. **Clone** the repository you generated **into your Obsidian folder/vault.**
+4. **Move your notes** that you would like to make public to the `repo-name/docs` folder.
+    - Easiest way to do this would be using drag and drop within Obsidian
+5. Commit and **push** the changes. Github actions will take care of the rest, publishing your notes using [MkDocs](https://www.mkdocs.org/), with the [Material theme](https://squidfunk.github.io/mkdocs-material/). 
+6. Go to `Settings > Pages` and select the select the **Source** as your `gh-pages` branch.
 
-[Link](url) and ![Image](src)
-```
+![](2021-11-22-22-52-49.png)
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+**Not working for you?** Open an [issue](https://github.com/jobindjohn/obsidian-publish-mkdocs/issues/new/choose) and let me know what went wrong.
 
-### Jekyll Themes
+## Configuring your website
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ValeriaWong/ValeriaWong.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### How do I arrange notes as sections and pages?
 
-### Support or Contact
+By default, the sections and pages will follow the folder structure within `/docs`. The folders and sub-folders will show up as sections. Try not to have white spaces in your folder and file names, as these will be converted to HTML links. The webpage heading will be the same as the first-level heading in the markdown note.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- If you would like to arrange the pages manually, then use the `nav` option in the `mkdocs.yml` [configuration file](https://www.mkdocs.org/#adding-pages) at the root of this repo  to set custom page navigation.
+    - For example, see the setup for [the Blue Book](https://lyz-code.github.io/blue-book/) at [github](https://github.com/lyz-code/blue-book/blob/master/mkdocs.yml). Managing each page using `nav` can become cumbersome as the number of notes increase though!
+- The Materials theme provides multiple options to arrange [sections](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections), use [navigation tabs](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs), and many other helpful [navigation setups](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/)
+
+## Alternatives
+
+- [datopian/obsidian-flowershow](https://github.com/datopian/obsidian-flowershow): plugin for publishing with flowershow direct from your obsidian vault.
+- [kmaasrud/oboe](https://github.com/kmaasrud/oboe): tool to convert an Obsidian vault into a static directory of HTML files.
+- [Jackiexiao/foam-mkdocs-template](https://github.com/Jackiexiao/foam-mkdocs-template): template for Obsidian/Foam using mkdocs/mkdocs-material/mkdocs-roamlinks-plugin
+- [foambubble/foam-template](https://github.com/foambubble/foam-template): Foam workpace template
+- [ObsidianPublisher/obsidian-mkdocs-publisher-template](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template): Obsidian Mkdocs Publisher, a free obsidian publish alternative throught Mkdocs
+- [KosmosisDire/obsidian-webpage-export](https://github.com/KosmosisDire/obsidian-webpage-export): Webpage HTML Export lets you export single files or whole vaults as HTML websites or documents. It is similar to publish, but you get direct access to the exported HTML.
+
+## Other interesting projects
+
+- [mathieudutour/gatsby-digital-garden: digital garden with Gatsby](https://github.com/mathieudutour/gatsby-digital-garden)
+- [TuanManhCao/digital-garden: Free Obisidian Publish alternative](https://github.com/TuanManhCao/digital-garden)
+
