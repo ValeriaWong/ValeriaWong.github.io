@@ -1,4 +1,5 @@
 site_name: obsidian-mkdocs template
+site_url: https://valeriawong.github.io/
 
 theme:
     name: 'material'
